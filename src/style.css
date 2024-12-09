@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* - Spacing system (px) */
+/* 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browswr font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Roboto Mono", sans-serif;
+  line-height: 1; */
+  /* font-weight: 400; */
+  /* color: #252525; */
+  /* border-bottom: 1.6rem solid #edc84b; */
+  /* background-color: #f7f2e9; */
+  /* height: 100%; */
+
+  font-family: "Roboto Mono", sans-serif;
+  color: #252525;
+  font-weight: 400;
+  background-color: #f7f2e9;
+  border-bottom: 1.6rem solid #edc84b;
+  min-height: 100vh;
+  /* padding: 3.2rem;
+  padding-bottom: 6rem; */
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 4.8rem; */
+}
+
+.header h1 {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #edc84b;
+  margin-bottom: 4.8rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.menu h2 {
+  font-size: 2.4rem;
+  border-top: 2px solid #252525;
+  padding: 0.4rem 0;
+  border-bottom: 2px solid #252525;
+  /* margin-bottom: 3.2rem; */
+  text-transform: uppercase;
+}
+.menu p {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.pizza {
+  /* height: 2.4rem; */
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+.pizza h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.pizza p {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-bottom: 2.4rem;
+}
+.pizza span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pizza img {
+  height: 11rem;
+}
+
+.pizzaes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  /* row-gap: 2.4rem;
+  column-gap: 2.4rem; */
+}
+.pizza-list {
+  list-style: none;
+}
+
+.pizza-list p {
+  text-align: left;
+}
+
+.footer {
+  padding: 3.2rem 0;
+  font-size: 1.8rem;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.sold-out {
+  filter: opacity(30%);
+}
+.btn {
+  padding: 1.2rem 2.4rem;
+  background-color: #edc84b;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
